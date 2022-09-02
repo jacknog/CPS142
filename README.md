@@ -6,7 +6,7 @@ Program searches through csv file for user input and displays 2 reports:
 If it cannot find that constellation, the program will throw you an error and tell you to retry. 
 
 Available searches are case INSENSITIVE (you can type uppercase or lowercase): 
-    A   
+    A)   
         And
         Ant
         Aps
@@ -15,9 +15,9 @@ Available searches are case INSENSITIVE (you can type uppercase or lowercase):
         Ara
         Ari
         Aur
-    B
+    B)
         Boo
-    C
+    C)
         Cae
         Cam
         Cap
@@ -40,26 +40,26 @@ Available searches are case INSENSITIVE (you can type uppercase or lowercase):
         Crv
         CVn
         Cyg
-    D
+    D)
         Del
         Dor
         Dra
-    E
+    E)
         Equ
         Eri
-    F
+    F)
         For
-    G
+    G)
         Gem
         Gru
-    H
+    H)
         Her
         Hor
         Hya
         Hyi
-    I
+    I)
         Ind
-    L
+    L)
         Lac
         Leo
         Lep
@@ -68,18 +68,18 @@ Available searches are case INSENSITIVE (you can type uppercase or lowercase):
         Lup
         Lyn
         Lyr
-    M
+    M)
         Men
         Mic
         Mon
         Mus
-    N
+    N)
         Nor
-    O
+    O)
         Oct
         Oph
         Ori
-    P
+    P)
         Pav
         Peg
         Per
@@ -89,9 +89,9 @@ Available searches are case INSENSITIVE (you can type uppercase or lowercase):
         Psc
         Pup
         Pyx
-    R
+    R)
         Ret
-    S
+    S)
         Scl
         Sco
         Sct
@@ -99,16 +99,16 @@ Available searches are case INSENSITIVE (you can type uppercase or lowercase):
         Sex
         Sge
         Sgr
-    T
+    T)
         Tau
         Tel
         TrA
         Tri
         Tuc
-    U
+    U)
         UMa
         UMi
-    V
+    V)
         Vel
         Vir
         Vol
