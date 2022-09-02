@@ -3,8 +3,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
-
-    
+    /*
+     * 
+     */
 
     // Filepath
     public static final String FILEPATH = "./mag_5_stars.csv";
@@ -48,6 +49,9 @@ public class Main {
             // stationary 0 until updated
             boolean shouldContinue = true;
             int count = 0;
+
+            System.out.println(
+                    "Welcome to the DCC Star Database!\n\nEnter the three-letter star abbreviation of a constellation to search.\nThe program will find the brightest and most distant stars from the database for the constellation.\n");
             while (shouldContinue) {
                 try {
                     System.out.print("Constellation (three letters): ");
@@ -91,14 +95,28 @@ public class Main {
                     System.out
                             .println("**************\nStar report for: " + search + "\n\nTotal number of stars found: "
                                     + count + "\n\nBrightest:\n" + brightest + "\nMost Distant:\n" + farthest);
-                    System.out.println("Do you wish to enter another star?");
-                    String answer = sc.nextLine();
+                    boolean foo = false;
+                    while (!foo) {
+                        try {
+                            System.out.println("Do you wish to enter another star?");
+                            String answer = sc.nextLine();
 
-                    // Checks if returned answer contains a "y" or anything else and stops program
-                    // if !"y"
-                    if (!answer.contains("y")) {
-                        shouldContinue = false;
-                        System.out.println("Thank you for using the DCC Star Constellation Database.\nGood Bye!");
+                            // Checks if returned answer contains a "y" or anything else and stops program
+                            if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
+                                shouldContinue = true;
+                                foo = true;
+                            } else if (answer.equalsIgnoreCase("no") || answer.equalsIgnoreCase("n")) {
+                                shouldContinue = false;
+                                foo = true;
+                                System.out
+                                        .println("Thank you for using the DCC Star Constellation Database. \nGoodbye!");
+                            } else {
+                                System.out.println("Please enter yes/no.");
+                                foo = false;
+                            }
+                        } catch (Exception e) {
+                            System.out.println("Please enter a valid star group.");
+                        }
                     }
 
                     // catch method in try_catch to see if the search yields a matching result and
