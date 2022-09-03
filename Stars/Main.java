@@ -85,8 +85,8 @@ public class Main {
 
                         // Using Star.java search the array based on search for the one with the lowest
                         // Visual Magnitude ABOVE 0
-                        if (star.getVisualMagnitude() < brightest.getVisualMagnitude()
-                                && brightest.getVisualMagnitude() < 0.0) {
+                        if ((star.getVisualMagnitude() < brightest.getVisualMagnitude())
+                                && brightest.getVisualMagnitude() > 0.00) {
                             brightest = star;
                         }
                     }
